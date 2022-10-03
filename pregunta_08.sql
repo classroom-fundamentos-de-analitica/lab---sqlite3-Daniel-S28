@@ -41,4 +41,4 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
-SELECT AVG(c21) FROM tbl2 GROUP BY c23;
+SELECT strftime('%Y',c23) as "Year", AVG(c21) FROM tbl2 GROUP BY strftime('%Y',c23);
